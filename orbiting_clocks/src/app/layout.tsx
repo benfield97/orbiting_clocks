@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen relative`}
         style={{
           backgroundImage: "url('/bckgrnd.jpeg')",
           backgroundSize: 'cover',
@@ -34,7 +34,10 @@ export default function RootLayout({
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {children}
+        <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
