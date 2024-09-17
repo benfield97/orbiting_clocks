@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
         style={{
-          backgroundImage: "url('/bckgrnd.png')",
+          backgroundImage: "url('/bckgrnd.jpeg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
